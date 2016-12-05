@@ -1,0 +1,40 @@
+{
+  "Garage": [
+    {
+      "Level": 1,
+      "Type": "car",
+      "Slot": "50",
+      "Licencse":"xi896z"
+    },
+    {
+      "Level": 2,
+      "Type": "bike",
+      "Slot": "90",
+      "Licencse":"1256dd"
+    },
+    {
+      "Level": 3,
+      "Type": "car",
+      "Slot": "58",
+      "Licencse":"hhssxx55"
+    },
+    {
+      "Level": 1,
+      "Type": "car",
+      "Slot": "10",
+      "Licencse":"oposlo99"
+    },
+    {
+      "Level": 2,
+      "Type": "bike",
+      "Slot": "16",
+      "Licencse":"xiosp00"
+    },
+    {
+      "Level": 4,
+      "Type": "car",
+      "Slot": "75",
+      "Licencse":"ppooppss22"
+    }
+  ]
+}

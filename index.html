@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script src="node_modules\angular\angular.js"> </script>
+    <script src="app.js"> </script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body ng-app="garageApp">
+    <div class="container" ng-controller="garageController">
+        <div class="header"> </div>
+        <div class="title">Vechiles</div>
+        <div class="left">
+            <div class="search-section">
+                <input type="text" placeholder="Search" class="search" ng-model="filters['query']" />
+            </div>
+            <span>Levels </span>
+            <ul ng-repeat="level in levels ">
+                <li><input type="checkbox" ng-model="filters[$index+1]" />Level{{level}} </li>
+
+            </ul>
+            <span>Type </span>
+            <ul>
+                <li><input ng-model="filters['car']" type="checkbox" />Car </li>
+                <li><input ng-model="filters['bike']" type="checkbox" />Bike</li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+
+                </tr>
+                <tr ng-repeat="item in filteredGarageData  | limitTo:pageSize:pageSize*(currentPage-1)  ">
+                    <td>{{item.Licencse}}<br/> {{item.Type}}
+                    </td>
+                    <td>Level {{item.Level}}<br/> Slot:{{item.Slot}}
+                    </td>
+
+                </tr>
+            </table>
+            <div >
+                <ul class="pagination">
+                    <li ng-repeat="page in pages"><a ng-click="setCurrentPage(page)" href="#">{{page}}</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
