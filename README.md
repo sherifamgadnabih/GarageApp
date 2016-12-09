@@ -10,4 +10,4 @@
 - run json-server db.json to serve the db.json which contains the sample data
 - Browse the index.html file in the browser
 
-![alt tag](screenshot.png)
+<img src= "screenshot.png"/>
