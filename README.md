@@ -9,5 +9,3 @@
 - run npm install json-server -g to install fake server that serve json files
 - run json-server db.json to serve the db.json which contains the sample data
 - Browse the index.html file in the browser
-
-<img src= "screenshot.png"/>
