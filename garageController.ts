@@ -1,4 +1,3 @@
-import {garageService} from './garageService'
 import {GarageScope} from './garageScope'
 export  class garageController {
     constructor(private $scope: GarageScope, private $http: ng.IHttpService) {

@@ -1,5 +1,4 @@
 import {garageController} from './garageController'
-import {GarageServiceFactory} from './garageService'
 import {pagingController} from './pagingController'
 import  * as angular  from 'angular'
 var app = angular.module('garageApp', [])
